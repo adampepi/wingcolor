@@ -58,7 +58,7 @@ ggplot(morphs2,aes(x=melanin.prop))+geom_density()+theme_classic()+xlim(.3,1)+xl
 str(morphs2)
 
 ghi <- shapefile(
-  "~/maps/l48_ghi_10km.shp")
+  "~/Documents/Research/dissertation/coloration/wingcolor/maps/l48_ghi_10km.shp")
 str(ghi)
 
 
@@ -168,7 +168,7 @@ tminplot<-ggplot(morphs2,aes(x=tmin_jja,y=melanin.prop))+
 
 tminplot
 
-tmean<- raster('~/maps/PRISM_tmean_30yr_normal_4kmM2_06_bil/PRISM_tmean_30yr_normal_4kmM2_06_bil.bil')
+tmean<- raster('~/Documents/Research/dissertation/coloration/wingcolor/maps/PRISM_tmean_30yr_normal_4kmM2_06_bil/PRISM_tmean_30yr_normal_4kmM2_06_bil.bil')
 
 
 mydf <- ggpredict(bglmm7sp, terms = c("vpdmax_jja"))
@@ -185,7 +185,7 @@ vpdmaxplot<-ggplot(morphs2,aes(x=vpdmax_jja,y=melanin.prop))+geom_point()+geom_l
 
 vpdmaxplot
 
-tmean<- raster('maps/PRISM_tmean_30yr_normal_4kmM2_06_bil/PRISM_tmean_30yr_normal_4kmM2_06_bil.bil')
+tmean<- raster('/Documents/Research/dissertation/coloration/wingcolor/maps/PRISM_tmean_30yr_normal_4kmM2_06_bil/PRISM_tmean_30yr_normal_4kmM2_06_bil.bil')
 
 
 
